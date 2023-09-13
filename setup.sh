@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
-# install hdbscan for BERTopic
 sudo apt-get update
-sudo apt-get install python3-dev
+sudo apt-get install python3-venv
+
+# create env called env
+python3 -m venv env
+
+# activate env
+source ./env/bin/activate
 
 # requirements
-pip install --upgrade pip
-pip install --upgrade nbformat
+
+python3 -m pip install ipykernel
+python3 -mipykernal install --user --name=env
+python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
+
+## if requirements change then rerun this again, also in requirements.txt
+
+
