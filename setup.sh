@@ -12,7 +12,7 @@ source ./env/bin/activate
 # requirements
 
 python3 -m pip install ipykernel
-python3 -mipykernal install --user --name=env
+python3 -mipykernel install --user --name=env
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
