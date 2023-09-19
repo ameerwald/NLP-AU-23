@@ -7,7 +7,7 @@ sudo apt-get install python3-venv
 python3 -m venv env
 
 # activate env
-source ./env/bin/activate
+source ./venvs/env/bin/activate
 
 # requirements
 
