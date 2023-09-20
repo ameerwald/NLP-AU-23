@@ -14,7 +14,9 @@ source ./venvs/env/bin/activate
 python3 -m pip install ipykernel
 python3 -mipykernel install --user --name=env
 python3 -m pip install --upgrade pip
+pip install -U spacy
 python3 -m pip install -r requirements.txt
+python -m spacy download en_core_web_md
 
 ## if requirements change then rerun this again, also in requirements.txt
 
