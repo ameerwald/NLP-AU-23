@@ -17,6 +17,7 @@ python3 -m pip install --upgrade pip
 pip install -U spacy
 python3 -m pip install -r requirements.txt
 python -m spacy download en_core_web_md
+python3 -m pip install datasets
 
 ## if requirements change then rerun this again, also in requirements.txt
 
