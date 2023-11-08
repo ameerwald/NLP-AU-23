@@ -50,7 +50,7 @@ class LSTMModel(nn.Module):
         labels = labels.view(-1)
 
         #mask out 'PAD' tokens
-        mask = (labels >= 0).float()
+        mask = (labels >= 8).float()
 
         #the number of tokens is the sum of elements in mask
         num_tokens = int(torch.sum(mask))
